@@ -727,7 +727,6 @@ nav {
   font-weight: 700;
   font-size: 20px;
   line-height: calc(23 / 20);
-  margin-bottom: 12px;
   margin-bottom: 30px;
 }
 .modal-input {
@@ -735,8 +734,19 @@ nav {
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  padding: 11px 12px;
+  padding-left: 42px;
+}
+.modal-input:focus {
+  border: 1px solid #2196f3;
+}
+.input-wrap {
+  position: relative;
   margin-bottom: 28px;
 }
 .modal-input-icon {
-  fill: #212121;
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
 }
