@@ -30,9 +30,13 @@
         <a href="./index.html" class="logo-link"><span class="accent">Web</span>Studio</a>
         <nav>
           <ul class="nav-list">
-            <li class="nav-item"><a href="./index.html" class="link current">Cтудія</a></li>
-            <li class="nav-item"><a href="./portfolio.html" class="link">Портфоліо</a></li>
-            <li class="nav-item"><a href="" class="link">Контакти</a></li>
+            <li class="nav-item">
+              <a href="./index.html" class="menu-link link current">Cтудія</a>
+            </li>
+            <li class="nav-item">
+              <a href="./portfolio.html" class="menu-link link">Портфоліо</a>
+            </li>
+            <li class="nav-item"><a href="" class="menu-link link">Контакти</a></li>
           </ul>
         </nav>
         <ul class="header-contacts">
@@ -105,7 +109,7 @@
                     </svg>
                   </div>
                 </div>
-                <div class="modal-field">
+                <div class="field-comment">
                   <label for="user-comment" class="input-label">
                     <span>Коментар</span>
                   </label>
@@ -116,7 +120,7 @@
                     placeholder="Введіть текст"
                   ></textarea>
                 </div>
-                <div class="modal-field">
+                <div class="modal-agree">
                   <input
                     type="checkbox"
                     name="privacy"
@@ -664,11 +668,8 @@
             </ul>
           </div>
           <div class="subscribe-box">
+            <p class="subscribe-title">Підпишіться на розсилку</p>
             <form class="send-form">
-              <label for="subscribe-user" class="subscribe-title"
-                ><span>Підпишіться на розсилку</span></label
-              >
-              <div class="box-input">
                 <input
                   type="text"
                   name="subscribe-email"
@@ -682,9 +683,7 @@
                     <use href="./images/icons.svg#icon-send"></use>
                   </svg>
                 </button>
-              </div>
             </form>
-          </div>
         </div>
       </footer>
     </main>

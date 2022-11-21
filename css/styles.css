@@ -101,6 +101,7 @@ img {
 .header {
   border-bottom: var(--header-border);
 }
+
 .header-container {
   display: flex;
   align-items: center;
@@ -151,7 +152,6 @@ nav {
   font-weight: 500;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
-
   position: relative;
   transition: color var(--anim-fast-hv);
 }
@@ -187,20 +187,22 @@ nav {
 .header-link:focus {
   color: var(--link-hvr-cl);
 }
+
 .current {
   color: var(--link-hvr-cl);
 }
 .current::after {
   content: '';
-  display: block;
+  display: inline-flex;
   width: 100%;
   height: 4px;
   background-color: var(--link-hvr-cl);
 
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   left: 0;
   border-radius: 2px;
+  border: none;
 }
 .header-svg {
   fill: currentColor;
@@ -300,7 +302,7 @@ nav {
   align-items: baseline;
 }
 .public-group {
-  margin-left: 70px;
+  margin-left: 93px;
 }
 /*HERO*/
 .hero {
@@ -751,8 +753,11 @@ nav {
 .modal-input:focus + .modal-input-icon {
   fill: #2196f3;
 }
-.modal-field {
+.modal-field:not(:last-child) {
   margin-bottom: 10px;
+}
+.modal-agree {
+  margin-bottom: 30px;
 }
 .input-wrap {
   position: relative;
@@ -784,6 +789,7 @@ nav {
   outline: transparent;
   resize: none;
   cursor: pointer;
+  display: block;
 }
 .modal-comment:focus {
   border-color: #2196f3;
@@ -793,6 +799,9 @@ nav {
   line-height: calc(14 / 12);
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
+}
+.field-comment {
+  margin-bottom: 20px;
 }
 .btn-modal {
   width: 200px;
@@ -858,28 +867,24 @@ nav {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
-}
-
-.subscribe-title span {
-  display: block;
   margin-bottom: 20px;
 }
 
 .subscribe-box {
   margin-left: 93px;
-  display: flex;
 }
 
 .subscribe-input {
   width: 358px;
   height: 50px;
+  padding: 15px 16px;
 
   border: 1px solid rgba(255, 255, 255, 0.3);
   background-color: var(--dark-bg-cl);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   outline: none;
-  color: rgba(255, 255, 255, 0.3);
+  color: var(--white-title-cl);
   font-size: 16px;
   line-height: calc(20 / 16);
 }
